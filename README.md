@@ -111,6 +111,8 @@ In Serverless, all I need is to write the business logic to calculate the Simple
 - For each action invocation a Docker container is spawned, the action code gets injected, it gets executed using the parameters passed to it, the result is obtained, the container gets destroyed.     
 
 ## Simple Interest Application
+- Check out the code from 'https://github.com/rajat965ng/OpenWhisk.git'
+- cd sequence/ and follow README.md
 
 ## Benefits of using OpenWhisk
 - You are not tied to any provider. Officially IBM Bluemix is available.
