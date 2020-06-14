@@ -1,0 +1,21 @@
+packages:
+  hello_world_package:
+    version: 1.0
+    license: Apache-2.0
+    actions:
+      hello_world_runtime:
+        function: action/action.js
+        runtime: nodejs@10
+        inputs:
+          var1:
+            type: integer
+            description: var1 of the payload
+            default: 0
+          var2:
+            type: integer
+            description: var2 of the payload
+            default: 2
+        outputs:
+          hello:
+            type: integer
+            description: sum of above mentioned vars

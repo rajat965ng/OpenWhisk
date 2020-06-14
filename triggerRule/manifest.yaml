@@ -1,0 +1,17 @@
+packages:
+  trigger_events:
+    actions:
+      sum_fifty:
+        function: ../action/action.js
+        inputs:
+          var1: integer
+          var2: integer
+    triggers:
+      sum_fifty:
+        inputs:
+          var1: 30
+          var2: 20
+    rules:
+      sum_fifty_rule:
+        trigger: sum_fifty
+        action: sum_fifty

@@ -1,0 +1,35 @@
+packages:
+  simple_interest_package:
+    actions:
+      data_input:
+        function: input.js
+        inputs:
+          principal:
+            type: integer
+            description: Principal
+            default: 0
+          rate:
+            type: integer
+            description: Rate of interest
+            default: 0
+          time:
+            type: integer
+            description: Total number of years
+            default: 0
+        outputs:
+          payload:
+            type: json
+            description: calculation input
+      interest_process:
+        function: simpleinterest.js
+        inputs:
+          payload: {}
+      amount_process:
+        function: amount.js
+        inputs:
+          payload: {}
+    sequences:
+      simple_interest_calculator:
+        actions: data_input, interest_process, amount_process
+
+

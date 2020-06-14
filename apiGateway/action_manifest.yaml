@@ -1,0 +1,13 @@
+packages:
+  api_hello_world_package:
+    actions:
+      hello_world:
+        function: ../action/action.js
+        annotations:
+          web-export: true
+    apis:
+      hello-world:
+        hello:
+          world:
+            hello_world:
+              method: GET

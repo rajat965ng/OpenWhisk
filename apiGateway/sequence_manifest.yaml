@@ -1,0 +1,19 @@
+packages:
+  simple_interest_api:
+    actions:
+      input_data:
+        function: ../sequence/input.js
+      calculate_interest:
+        function: ../sequence/simpleinterest.js
+      calculate_amount:
+        function: ../sequence/amount.js
+    sequences:
+      calculator:
+        actions: input_data, calculate_interest, calculate_amount
+        web: true
+    apis:
+      calculator:
+        v1:
+          calculate:
+            calculator:
+              method: GET
