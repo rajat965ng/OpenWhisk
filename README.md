@@ -36,11 +36,15 @@ In Serverless, all I need is to write the business logic to calculate the Simple
   In case of data center or private cloud, one can setup serverless frameworks like OpenWhisk, Knative, Fn Project. etc on bare-metal. These frameworks provide hybrid compatibility with Public cloud as well.
   
 ## Introduction to OpenWhisk
-    "Apache OpenWhisk is an open source, distributed Serverless platform that executes functions (fx) in response to events at any scale. The OpenWhisk platform supports a programming model in which developers write functional logic (called <b>Actions</b>), in any supported programming language, that can be dynamically scheduled and run in response to associated events (via <b>Triggers</b>) from external sources (<b>Feeds</b>) or from HTTP requests."
+    "Apache OpenWhisk is an open source, distributed Serverless platform that executes functions (fx) in 
+    response to events at any scale. The OpenWhisk platform supports a programming model in which developers 
+    write functional logic (called <b>Actions</b>), in any supported programming language, that can be dynamically
+    scheduled and run in response to associated events (via <b>Triggers</b>) from external sources (<b>Feeds</b>) 
+    or from HTTP requests."
 
 ## Programming Model
 
-![](/ProgrammingModel.png)
+![](.README_images/ProgrammingModel.png)
 
 ### Actions
 - Actions are the atomic units that encapsulate application logic and execute it in response to events. Actions can be invoked by OpenWhisk REST API, OpenWhisk CLI, User defined APIs or triggers.
