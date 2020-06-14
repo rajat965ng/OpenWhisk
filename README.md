@@ -20,6 +20,7 @@ In Serverless, all I need is to write the business logic to calculate the Simple
 <b>Essentially, this means as a developer I'm just focused on writing the business logic and need not to worry about stuff around it to make it available.</b>     
 
 ## Benefits of FaaS or Serverless
+- Promotes single responsibility principle.
 - Zero efforts on server management.
 - Serverless architectures are inherently scalable.
 - Cross cutting concerns like security, IAM, API Gateway, Traffic management, Recovery, Observability, logging and monitoring etc. are already managed.
@@ -111,6 +112,12 @@ In Serverless, all I need is to write the business logic to calculate the Simple
 - For each action invocation a Docker container is spawned, the action code gets injected, it gets executed using the parameters passed to it, the result is obtained, the container gets destroyed.     
 
 ## Simple Interest Application
+- I've created a NodeJs based Simple interest calculator. 
+  - It contains series of actions. 
+    - f(x) to accept input.
+    - f(x) to calculate interest.
+    - f(x) to calculate amount.
+  - It contains a `manifest.yaml` file that act as a deployment descriptor for OpenWhisk.  
 - Check out the code from 'https://github.com/rajat965ng/OpenWhisk.git'
 - cd sequence/ and follow README.md
 
